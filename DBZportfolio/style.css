@@ -7,13 +7,16 @@
 
 body {
     height: 100vh;
-    box-sizing: border-box;
-    background-color: black;
+    background: linear-gradient(to bottom, #1d2b53, #7e2553, #ff5555);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
     color: white
 }
 
 .titulo-destaque {
-    color:#ff5500;
+    color:#d38b06;
 }
 
 .conteudo {
