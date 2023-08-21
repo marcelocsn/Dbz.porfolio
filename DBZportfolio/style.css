@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: black;
+    color: white
+}
+
+.titulo-destaque {
+    color:#ff5500;
+}
+
+.conteudo {
+    height: auto;
+    flex-direction: column;
+    margin: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao-conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente os elementos */
+    align-items: center; /* Centraliza horizontalmente os elementos */
+    text-align: center; /* Centraliza o texto */
+    height: auto; 
+    gap: 40px;
+    order: 2;
+
+}
+
+.apresentacao-conteudo-titulo {
+    font-size: 36px;
+    font-family: 'Krona One', sans-serif;
+    text-align: justify;
+}
+
+.apresentacao-conteudo-paragrafo {
+    font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+}
+
+/* Iniciando estilização da ancora1 (botao1) */
+
+.apresentacao-links {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.botao1 {
+    background-color: #000;
+    color: #ff5500;
+    width: 500px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    border: 2px solid #ff5500;
+    border-radius: 50px;
+    font-size: 36px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #ff5500);
+    transition: 0.5s;
+}
+
+.botao1:hover::before {
+    left: 100%;
+}
+
+.botao1 i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+}
+
+/* fim da estilização ancora 1(botao1) */
+
+/* Inicio da estilização ancora 2(botao2) */
+
+.botao2 {
+    background-color: #000;
+    color: #0077B5; /* Cor padrão do LinkedIn */
+    width: 500px;
+    height: 80px;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #0077B5;
+    border-radius: 50px;
+    font-size: 36px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #0077B5);
+    transition: 0.5s;
+}
+
+.botao2:hover::before {
+    left: 100%;
+}
+
+.botao2 i {
+    position: absolute;
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* fim da estilização ancora2(botao2) */
+
+.botao3 {
+    background-color: #000;
+    align-items: center;
+    color: #333; /* Cor padrão do GitHub */
+    width: 500px;   /* Largura ajustada automaticamente ao conteúdo */
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #333;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #333);
+    transition: 0.5s;
+}
+
+.botao3:hover::before {
+    left: 100%;
+}
+
+.botao3 i {
+    position: absolute;
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fim da estilização ancora3(botao3) */
+
+/* inicio estilização ancora4(botao4) */
+
+.botao4 {
+    background-color: #000;
+    align-items: center;
+    color: #25D366; /* Cor padrão do WhatsApp */
+    width: 500px;   /* Largura ajustada automaticamente ao conteúdo */
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid#25D366;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #25D366);
+    transition: 0.5s;
+}
+
+.botao4:hover::before {
+    left: 100%;
+}
+
+.botao4 i {
+    position: absolute;
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fim estilização ancora4(botao4) */
+
+/* inicio estilização ancora5(botao5) */
+
+.botao5 {
+    background-color: #000;
+    align-items: center;
+    color: #b61ca9; /* Cor padrão do Instagram */
+    width: 500px;   /* Largura ajustada automaticamente ao conteúdo */
+    height: 80px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid#b61ca9;
+    border-radius: 50px;
+    font-size: 24px;
+    padding: 15px 0;
+    text-decoration: none;
+    font-family: 'Rock Salt', cursive;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.botao5::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, transparent, #2a0887);
+    transition: 0.5s;
+}
+
+.botao5:hover::before {
+    left: 100%;
+}
+
+.botao5 i {
+    position: absolute;
+    font-size: 60px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* fim estilização ancora5(botao5) */
+
+/* inicio estilização imagem */
+
+.imagem {
+    max-width: 100%;
+    width: 650px;
+    height: 650px;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px; /* Curvatura dos cantos */
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    order: 1;
+    margin-bottom: 80px;
+}
+
+
+.imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz com que a imagem se ajuste mantendo a proporção */
+}
+
+.imagem::before,
+.imagem::after {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #ff5500;
+    background-color: transparent; /* Fundo transparente */
+}
+
+.imagem::before {
+    top: 0;
+    left: 0;
+    border-top-left-radius: 10px;
+    border-width: 2px 0 0 2px;
+}
+
+.imagem::after {
+    bottom: 0;
+    right: 0;
+    border-bottom-right-radius: 10px;
+    border-width: 0 2px 2px 0;
+}
+
+.imagem:hover {
+    transform: scale(1.1);
+}
+
+
+
